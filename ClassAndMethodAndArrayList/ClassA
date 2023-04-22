@@ -1,5 +1,3 @@
-package sec03.LoginSystem;
-
 public class ClassA {
 
 	public static void main(String[] args) {
