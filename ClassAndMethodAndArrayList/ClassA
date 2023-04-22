@@ -1,8 +1,5 @@
 package sec03.LoginSystem;
 
-import java.util.Scanner;
-import java.util.ArrayList;
-
 public class ClassA {
 
 	public static void main(String[] args) {
