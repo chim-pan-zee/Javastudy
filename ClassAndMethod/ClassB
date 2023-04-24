@@ -1,0 +1,54 @@
+package sec03.LoginSystem;
+import java.util.ArrayList;
+public class ClassB {
+	public void boat(int a, int b) {
+		int c = a + b;
+		System.out.println(c);
+	}	
+	public void comparison(int a, int b) {
+		if (a > b) {
+			System.out.println("a가 큽니다. a의 값:" + a);
+		} else if (a < b) {
+			System.out.println("b가 큽니다. b의 값:" + b);
+		}
+	}	
+	public void submit(int a, int b, int c) {
+		System.out.println(a + ", " + b + ", " + c);
+	}	
+	public void save(int a, int b) {
+		int c = a + b;
+		System.out.println(c);
+	}	
+	public int tenBout(int sumTotal){		
+		for (int i = 0; i <= 10; i++) {
+			sumTotal += i;
+		}		
+		return sumTotal;		
+	}	
+	public int evenAndFive(int sumTotal){		
+		for (int i = 0; i <= 100; i++) {
+			if (i % 2 == 0) {
+				if (i % 5 == 0) {
+					sumTotal += i;
+				}
+			}
+		}	
+		return sumTotal;	
+	}
+	public int arrayLength(int arrayLength, int sumTotal){
+		ArrayList<Integer> a = new ArrayList<Integer>();		
+		for (int i = 0; i <= arrayLength; i++) {
+			a.add(i);
+			sumTotal += a.indexOf(i);
+		}		
+		return sumTotal;		
+	}	
+	public int sum(int sumTotal){		
+		ArrayList<Integer> a = new ArrayList<Integer>();		
+		for (int i = 0; i < 100; i++) {
+			a.add(i);
+			sumTotal += a.indexOf(i);
+		}		
+		return sumTotal;		
+	}
+}
