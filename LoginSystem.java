@@ -1,6 +1,5 @@
 package sec03.LoginSystem;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Login {
@@ -18,7 +17,6 @@ public class Login {
       boolean signInStatus = false; //로그인 상태
       boolean alphabet = false;
 
-      
       Loop1:
       while (true) {
       
@@ -34,8 +32,8 @@ public class Login {
             while (true) {
                if (loginStatus == true) {
                System.out.println("이미 로그인 된 상태입니다. 로그아웃 후 새로운 계정을 생성하시겠습니까? y/n");
-               String yesOrNo = sc.next();
-               if (yesOrNo.equals("y")) {
+               String yesOrNo = sc.next(); 
+               if (yesOrNo.equals("y")) { 
                   loginStatus = false;
                   break Loop2;
                } 
